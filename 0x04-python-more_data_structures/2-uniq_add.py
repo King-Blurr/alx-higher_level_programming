@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 
 
-def search_replace(my_list, search, replace):
+def uniq_add(my_list=[]):
     """
-    replaces all occurances of search with replace
+    adds all unique elements of a list of integers
     """
-    return ([elem if elem != search else replace for elem in my_list])
+    return (sum(set(my_list)))
